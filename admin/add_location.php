@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	require_once("../db_connect.php");
+	require_once("../../db_connect.php");
 
 	$errors = array();
 
@@ -61,6 +61,3 @@ echo '<form action="add_location.php" method="post">
 		<p><input type="submit" name="submit" value="Add Location" /></p>
 	  </form>';
 ?>
-
-</body>
-</html>

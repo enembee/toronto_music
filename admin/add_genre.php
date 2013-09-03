@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	require_once("../db_connect.php");
+	require_once("../../db_connect.php");
 
 	$errors = array();
 
@@ -32,6 +32,3 @@ echo '<form action="add_genre.php" method="post">
 		<p><input type="submit" name="submit" value="Add Genre" /></p>
 	  </form>';
 ?>
-
-</body>
-</html>
