@@ -1,8 +1,19 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	require("../../db_connect.php");
-	//include("admin_functions.php");
+require("../../db_connect.php");
 
+function load_genres($dbc){
+$q = "SELECT * FROM genres";
+$r = mysqli_query($dbc, $q);
+
+echo "<select name='genre_id'>";
+while ($row = mysqli_fetch_array($r, MYSQLI_NUM)) {
+								echo "<option value=\"$row[0]\">$row[1]</option>\n";
+							}
+echo "</select>";
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	//include("../../db_connect.php");
 	$errors = array();
 
 	if (empty($_POST["band_name"])) {
@@ -34,23 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	}
 }
 
-function load_genres(){
-include("../../db_connect.php");
-$q = "SELECT genre_id, genre_name FROM genres";
-$r = mysqli_query($dbc, $q);
-
-echo '<p>Genre:<select name="genre_id">';
-
-while ($row = mysqli_fetch_array($r)) {
-	echo '<option value="' . $row["genre_id"] . '">' . $row["genre_name"] . '</option>';
-}
-
-echo "</select></p>";
-}
-
 echo '<form action="add_band.php" method="post">
 		<p>Band Name:<input type="text" name="band_name" size="30" maxlength="60" /></p><p>';
-load_genres();
+load_genres($dbc);
 echo '</p><p><input type="submit" name="submit" value="Add Band" /></p>
 	  </form>';
 ?>

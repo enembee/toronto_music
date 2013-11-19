@@ -15,6 +15,7 @@ show_description VARCHAR(60) NOT NULL,
 show_date DATETIME NOT NULL,
 show_start TIME NOT NULL,
 show_end TIME NOT NULL,
+date_added DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY (show_id),
 INDEX (location_id),
 INDEX (show_date)

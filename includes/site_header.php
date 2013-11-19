@@ -11,7 +11,7 @@
 	<div id="navigation">
 		<ul>
 			<li><a href="http://localhost/toronto_music/index.php">Home Page</a></li>
-			<li><a href="http://localhost/toronto_music/admin/admin.php">Admin Pages</a></li>
+			<li><a href="http://localhost/toronto_music/admin.php">Admin Pages</a></li>
 		</ul>
 	</div>
 	<div id="content">
