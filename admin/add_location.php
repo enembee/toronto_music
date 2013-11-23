@@ -72,6 +72,7 @@ echo '<form action="add_location.php" method="post">
 		<p>Postal Code:<input type="text" name="postal_code" size="20" maxlength="10" /></p>
 		<p>Latitude:<input type="text" name="lat" size="20" maxlength="20" /></p>
 		<p>Longitude:<input type="text" name="lng" size="20" maxlength="20" /></p>
+		<p><a href="http://geolytica.com/">Look up Geocodes</></p>
 		<p><input type="submit" name="submit" value="Add Location" /></p>
 	  </form>';
 ?>
