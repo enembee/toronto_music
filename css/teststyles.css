@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	text-align: center;
+  	position: fixed;
+  	height: 70px;
+  	width: 100%;
+  	background-color: #ff0000;
+}
+
+#footer {
+	text-align: center;
+  	height: 70px;
+  	width: 100%;
+  	background-color: #ff0000;
+}
+
+#left_column {
+	float: left;
+	width: 50%;
+	background-color: green;
+}
+
+#right_column {
+	float: left;
+	width: 50%;
+	background-color: blue;
+}

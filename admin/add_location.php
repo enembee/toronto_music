@@ -37,13 +37,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (empty($_POST["lat"])) {
 		$errors[] = "Please enter the latitude";
 	} else {
-		$pc = mysqli_real_escape_string($dbc, trim($_POST["lat"]));
+		$lat = mysqli_real_escape_string($dbc, trim($_POST["lat"]));
 	}
 
 	if (empty($_POST["lng"])) {
 		$errors[] = "Please enter the longitude";
 	} else {
-		$pc = mysqli_real_escape_string($dbc, trim($_POST["lng"]));
+		$lng = mysqli_real_escape_string($dbc, trim($_POST["lng"]));
 	}
 
 

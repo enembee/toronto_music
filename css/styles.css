@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+html, body { 
+	height: 100%; 
+}
+
+#header {
+	text-align: center;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	height: 70px;
+  	width: 100%;
+  	background-color: red;
+}
+
+#admin_menu {
+	margin-top: 70px;
+}
+
+#navigation ul li {
+		display: inline;
+		padding: 5px;
+}
+
+#content{
+	max-width: 90%;
+	margin: auto;
+}
+
+#upcoming_shows {
+	float: left;
+	background-color: green;
+	width: 50%;
+	margin-top: 70px;
+}
+
+#recently_added {
+	float: left;
+	background-color: blue;
+	width: 50%;
+	margin-top: 70px;
+}
+
+footer {
+	text-align: center;
+	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	height: 70px;
+  	width: 100%;
+  	background-color: red;
+}
+
+#map {
+	margin: 70px auto 70px auto;
+	width: 90%;
+	height: 100%;
+
+}
